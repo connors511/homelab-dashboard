@@ -1,0 +1,65 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #3b8dd0;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$title-show-color:  rgba(255, 255, 255, 1);
+$title-episode-color: rgba(255, 255, 255, 0.8);
+$episode-color:     rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-betaseries styles
+// ----------------------------------------------------------------------------
+.widget-sab {
+
+  background-color: $background-color;
+  vertical-align: top;
+
+  .title {
+    color: $title-color;
+  }
+
+  ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $title-show-color;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .title-show {
+    color: $title-show-color;
+  }
+
+  .episode {
+    &:before{
+      content : " - ";
+    }
+    font-size: 0.7em;
+    color: $title-episode-color;
+  }
+
+  .number, .date {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $episode-color;
+  }
+
+  .date {
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 0.8em;
+    border: 2px #FFF solid;
+    border-radius: 20px;
+    padding:0 .5em;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}

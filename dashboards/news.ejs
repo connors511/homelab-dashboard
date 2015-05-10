@@ -1,0 +1,63 @@
+<script type='text/javascript'>
+	$(function() {
+		Dashing.widget_base_dimensions = [180, 170]
+		// 10 columns, 6 rows = 1080p
+		Dashing.numColumns = 10
+	});
+</script>
+
+<div class="gridster">
+	<ul>
+		<li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+			<div data-view="Clock" style="background-color: #4b4b4b"></div>
+			<i class="icon-time icon-background"></i>
+		</li>
+
+		<li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+			<div data-id="sss-gateway" data-view="ServerStatusSquares" data-title="Gateway"></div>
+		</li>
+		<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+			<div data-id="sss-google" data-view="ServerStatusSquares" data-title="Google"></div>
+		</li>
+		<li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+			<div data-id="sss-github" data-view="ServerStatusSquares" data-title="Github"></div>
+		</li>
+		<!-- <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+			<div data-id="sss-brokenserver" data-view="ServerStatusSquares" data-title="Broken Server"></div>
+		</li> -->
+		<li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+			<div data-id="sss-alexandria" data-view="ServerStatusSquares" data-title="Alexandria"></div>
+		</li>
+
+		<li data-row="3" data-col="1" data-sizex="2" data-sizey="2">
+			<div data-id="hdd" data-view="Sab" data-title="Disk space"></div>
+		</li>
+
+		<li data-row="3" data-col="3" data-sizex="2" data-sizey="2">
+		  <div data-id="services" data-view="Services" data-title="Services Status"></div>
+		</li>
+
+		<li data-row="1" data-col="5" data-sizex="2" data-sizey="3">
+			<div data-id="startup_quote" data-view="BigImage" data-title="Startup quote" style="background-color:transparent;" data-max="false"></div>
+		</li>
+		<li data-row="1" data-col="7" data-sizex="2" data-sizey="2">
+			<div data-id="weather" data-view="Weather"></div>
+		</li>
+
+		<!-- <li data-row="4" data-col="1" data-sizex="4" data-sizey="2">
+			<div data-id="sab" data-view="Sab" data-title="SabNZB"></div>
+		</li> -->
+
+
+		<li data-row="1" data-col="9" data-sizex="2" data-sizey="2">
+		  <div data-id="v2" data-view="Rss" data-title="Version2" data-interval="35"></div>
+		</li>
+
+		<li data-row="3" data-col="9" data-sizex="2" data-sizey="2">
+		  <div data-id="recordere" data-view="Rss" data-title="Recordere" data-interval="20"></div>
+		</li>
+
+	</ul>
+</div>
+<%- contentFor('title') %>
+News

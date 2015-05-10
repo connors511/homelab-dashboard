@@ -1,0 +1,11 @@
+<h1 class="title" data-bind="title"></h1>
+
+<ul>
+  <li data-foreach-slot="slots">
+    <span class="title-show" data-bind="slot.filename"></span>
+	<span class="episode" data-bind="slot.details"></span>
+	<span class="number" data-bind="slot.percentage"></span>
+  </li>
+</ul>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

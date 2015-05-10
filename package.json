@@ -1,0 +1,17 @@
+{
+  "name": "dashboard",
+  "description": "dashboard",
+  "author": "<Put your name here>",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "async": "^0.9.0",
+    "dashing-js": "~0.1.5",
+    "lodash": "^2.4.1",
+    "moment": "^2.5.1",
+    "ping": "^0.1.9",
+    "sequest": "^0.8.0",
+    "xml2js": "^0.4.2"
+  },
+  "engine": "node >= 0.10"
+}
